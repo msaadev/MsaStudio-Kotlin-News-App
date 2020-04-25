@@ -21,6 +21,7 @@ class FeedFragment : Fragment() {
     private lateinit var viewModel : FeedViewModel
     private var  newsAdapter = NewsAdapter(arrayListOf())
     var countrylink =   ""
+    var apiKey = "Your-Api-Key"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,7 +65,7 @@ class FeedFragment : Fragment() {
 
                 category = ""
                 dataSh.edit().putString("cate1",category).apply()
-                countrylink = "top-headlines?${countrycode}${category}apiKey=YOUR-API-KEY"
+                countrylink = "top-headlines?${countrycode}${category}apiKey=${apiKey}"
                 viewModel=ViewModelProviders.of(this).get(FeedViewModel::class.java)
                 viewModel.refreshData(countrylink)
                 recyclerView.layoutManager = LinearLayoutManager(context)
@@ -76,7 +77,7 @@ class FeedFragment : Fragment() {
 
                 category = "category=sports&"
                 dataSh.edit().putString("cate1",category).apply()
-                countrylink = "top-headlines?${countrycode}${category}apiKey=YOUR-API-KEY"
+                countrylink = "top-headlines?${countrycode}${category}apiKey=${apiKey}"
                 viewModel=ViewModelProviders.of(this).get(FeedViewModel::class.java)
                 viewModel.refreshData(countrylink)
                 recyclerView.layoutManager = LinearLayoutManager(context)
@@ -88,7 +89,7 @@ class FeedFragment : Fragment() {
 
                 category = "category=technology&"
                 dataSh.edit().putString("cate1",category).apply()
-                countrylink = "top-headlines?${countrycode}${category}apiKey=YOUR-API-KEY"
+                countrylink = "top-headlines?${countrycode}${category}apiKey=${apiKey}"
                 viewModel=ViewModelProviders.of(this).get(FeedViewModel::class.java)
                 viewModel.refreshData(countrylink)
                 recyclerView.layoutManager = LinearLayoutManager(context)
@@ -100,7 +101,7 @@ class FeedFragment : Fragment() {
 
                 category = "category=health&"
                 dataSh.edit().putString("cate1",category).apply()
-                countrylink = "top-headlines?${countrycode}${category}apiKey=YOUR-API-KEY"
+                countrylink = "top-headlines?${countrycode}${category}apiKey=${apiKey}"
                 viewModel=ViewModelProviders.of(this).get(FeedViewModel::class.java)
                 viewModel.refreshData(countrylink)
                 recyclerView.layoutManager = LinearLayoutManager(context)
@@ -112,7 +113,7 @@ class FeedFragment : Fragment() {
 
                 category = "category=science&"
                 dataSh.edit().putString("cate1",category).apply()
-                countrylink = "top-headlines?${countrycode}${category}apiKey=YOUR-API-KEY"
+                countrylink = "top-headlines?${countrycode}${category}apiKey=${apiKey}"
                 viewModel=ViewModelProviders.of(this).get(FeedViewModel::class.java)
                 viewModel.refreshData(countrylink)
                 recyclerView.layoutManager = LinearLayoutManager(context)
@@ -124,7 +125,7 @@ class FeedFragment : Fragment() {
 
                 category = "category=business&"
                 dataSh.edit().putString("cate1",category).apply()
-                countrylink = "top-headlines?${countrycode}${category}apiKey=YOUR-API-KEY"
+                countrylink = "top-headlines?${countrycode}${category}apiKey=${apiKey}"
                 viewModel=ViewModelProviders.of(this).get(FeedViewModel::class.java)
                 viewModel.refreshData(countrylink)
                 recyclerView.layoutManager = LinearLayoutManager(context)
@@ -156,7 +157,7 @@ class FeedFragment : Fragment() {
                     Toast.makeText(activity!!,"Please Write A Topic",Toast.LENGTH_SHORT).show()
                 }else{
                     val topic = searchBar2.text.toString()
-                    countrylink = "everything?q=${topic}&language=${searchLanguage}&apiKey=YOUR-API-KEY"
+                    countrylink = "everything?q=${topic}&language=${searchLanguage}&apiKey=${apiKey}"
                     viewModel=ViewModelProviders.of(this).get(FeedViewModel::class.java)
                     viewModel.refreshData(countrylink)
                     recyclerView.layoutManager = LinearLayoutManager(context)
@@ -174,7 +175,7 @@ class FeedFragment : Fragment() {
         }
 
             if (sds.equals("")){
-                countrylink = "top-headlines?${countrycode}${category}apiKey=YOUR-API-KEY"
+                countrylink = "top-headlines?${countrycode}${category}apiKey=${apiKey}"
             }else{
                 countrylink = sds!!
             }
@@ -248,11 +249,11 @@ class FeedFragment : Fragment() {
 
             //imgr.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY)
         } else{
-            if (searchBar2.text.equals("")){
+            if (searchBar2.text.toString().equals("")){
                 Toast.makeText(activity!!,"Please Write A Topic",Toast.LENGTH_SHORT).show()
             }else{
                 val topic = searchBar2.text.toString()
-                countrylink = "everything?q=${topic}&language=${searchLanguage}&apiKey=YOUR-API-KEY"
+                countrylink = "everything?q=${topic}&language=${searchLanguage}&apiKey=${apiKey}"
                 viewModel=ViewModelProviders.of(this).get(FeedViewModel::class.java)
                 viewModel.refreshData(countrylink)
                 recyclerView.layoutManager = LinearLayoutManager(context)
