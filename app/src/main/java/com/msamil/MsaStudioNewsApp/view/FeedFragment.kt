@@ -153,10 +153,10 @@ class FeedFragment : Fragment() {
 
                 //imgr.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY)
             } else{
-                if (searchBar2.text.equals("")){
+                if (searchBar2.text.toString().equals("")){
                     Toast.makeText(activity!!,"Please Write A Topic",Toast.LENGTH_SHORT).show()
                 }else{
-                    val topic = searchBar2.text.toString().toString()
+                    val topic = searchBar2.text.toString()
                     countrylink = "everything?q=${topic}&language=${searchLanguage}&apiKey=${apiKey}"
                     viewModel=ViewModelProviders.of(this).get(FeedViewModel::class.java)
                     viewModel.refreshData(countrylink)
