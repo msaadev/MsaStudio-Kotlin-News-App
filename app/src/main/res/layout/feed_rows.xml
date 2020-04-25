@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:paddingEnd="1dp"
+    android:paddingStart="1dp"
+    android:orientation="horizontal">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:background="@drawable/news_back"
+        android:paddingTop="15dp"
+        android:paddingEnd="4dp"
+        android:id="@+id/costok"
+        android:paddingStart="4dp"
+        app:layout_constraintTop_toTopOf="parent">
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+
+        app:layout_constraintCircleRadius="50dp"
+        android:layout_height="230dp"
+        android:id="@+id/theImage"
+        />
+
+    <ImageView
+        android:id="@+id/topShad"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/top_shadow"
+        app:layout_constraintTop_toTopOf="@id/theImage"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/bottom_shadow"
+        app:layout_constraintBottom_toBottomOf="@id/theImage"
+        android:id="@+id/botShad"/>
+
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="1dp"
+        android:textColor="@android:color/white"
+        android:text="Title"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/theImage"
+        app:layout_constraintStart_toStartOf="@+id/theImage" />
+
+    <TextView
+        android:id="@+id/publisherView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="1dp"
+        android:textColor="@android:color/white"
+        android:text="Publisher"
+        app:layout_constraintBottom_toTopOf="@+id/titleView"
+        app:layout_constraintEnd_toEndOf="@+id/theImage" />
+
+    <TextView
+        android:id="@+id/descripView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="#7f7e7b"
+        android:padding="1dp"
+        android:textStyle="bold"
+        android:text="decription"
+        app:layout_constraintEnd_toEndOf="@+id/theImage"
+        app:layout_constraintTop_toBottomOf="@+id/theImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

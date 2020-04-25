@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.CountrySelectFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="Made By : MSA studio "/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="2dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Please Select Your Country"
+            android:gravity="center"
+            android:textSize="30sp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/scroo">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/countrySelect"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="2dp"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="turkey"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:id="@+id/buttontr"/>
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" unıted states "
+                    android:padding="2dp"
+                    android:id="@+id/buttonus"/>
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="2dp"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" south korea "
+                    android:padding="2dp"
+                    android:id="@+id/buttonsk"/>
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="france"
+                    android:padding="2dp"
+                    android:id="@+id/buttonfr"/>
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Indonesia "
+                    android:padding="2dp"
+                    android:id="@+id/buttonid"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="2dp"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="egypt"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:id="@+id/buttoneg"/>
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text=" japan "
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textColor="@color/first1"
+                    android:id="@+id/buttonjp"/>
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ıtaly"
+                    android:textColor="@color/first1"
+                    android:padding="2dp"
+                    android:id="@+id/buttonit"/>
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="brasIl"
+                    android:textColor="@color/first1"
+                    android:padding="2dp"
+                    android:id="@+id/buttonbra"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="2dp"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="russıa"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textColor="@color/first1"
+                    android:id="@+id/buttonrus"/>
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="germany"
+                    android:textColor="@color/first1"
+                    android:padding="2dp"
+                    android:id="@+id/buttonde"/>
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ındıa"
+                    android:textColor="@color/first1"
+                    android:padding="2dp"
+                    android:id="@+id/buttonin"/>
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="china"
+                    android:textColor="@color/first1"
+                    android:padding="2dp"
+                    android:id="@+id/buttonprc"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="2dp"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="canada"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textColor="@color/first1"
+                    android:id="@+id/buttonca"/>
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" unıted kıngdom "
+                    android:textColor="@color/first1"
+                    android:padding="2dp"
+                    android:id="@+id/buttonuk"/>
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" argentına "
+                    android:textColor="@color/first1"
+                    android:padding="2dp"
+                    android:id="@+id/buttonar"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="2dp"
+                >
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" saudı arabıa "
+                    android:textColor="@color/first1"
+                    android:padding="2dp"
+                    android:id="@+id/buttonsa"/>
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="malaysıa"
+                    android:textColor="@color/first1"
+                    android:padding="2dp"
+                    android:id="@+id/buttonmy"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="2dp"
+                >
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" sıngapore "
+                    android:textColor="@color/first1"
+                    android:padding="2dp"
+                    android:id="@+id/buttonsg"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="2dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="Made By : MSA studio "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="italic"
+                    android:layout_height="wrap_content"
+                    android:text="Powered By : newsapi.org"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

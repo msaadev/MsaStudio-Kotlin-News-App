@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/feedFragment2">
+    <fragment
+        android:id="@+id/feedFragment2"
+        android:name="com.msamil.MsaStudioNewsApp.view.FeedFragment"
+        android:label="FeedFragment" >
+        <action
+            android:id="@+id/action_feedFragment2_to_webFragment2"
+            app:destination="@id/webFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_feedFragment2_to_countrySelectFragment"
+            app:destination="@id/countrySelectFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="countryCode"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/webFragment2"
+        android:name="com.msamil.MsaStudioNewsApp.view.WebFragment"
+        android:label="WebFragment" >
+        <argument android:name="Url2Web"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/countrySelectFragment"
+        android:name="com.msamil.MsaStudioNewsApp.view.CountrySelectFragment"
+        android:label="fragment_country_select"
+        tools:layout="@layout/fragment_country_select" >
+        <action
+            android:id="@+id/action_countrySelectFragment_to_feedFragment2"
+            app:destination="@id/feedFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+</navigation>
